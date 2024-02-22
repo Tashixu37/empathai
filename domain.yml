@@ -1,0 +1,123 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - mood_angry
+  - mood_surprised
+  - mood_fear
+  - mood_love
+  - bot_challenge
+  - gratitude
+  - mood_great_reason
+  - mood_unhappy_reason
+  - mood_angry_reason
+  - mood_surprised_reason
+  - mood_fear_reason
+  - mood_love_reason
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hello! How do you feel today!"
+  - text: "Kuzu zangpo! How are you feeling today!"
+  - text: "Hey Hey! How do you feel today?"
+  - text: "Hello there! How do you feel today?"
+  - text: "Hi there! How are you feeling today?"
+  - text: "Hello! How are you doing today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "That's great to hear! I'm happy for you! Want to tell me about it?"
+  - text: "I can hear the joy in your voice. That's wonderful! Mind sharing it with me?"
+  - text: "It's always great to feel joyful. What's making you feel so happy? Will you share with me"
+  - text: "Your happiness is infectious. Keep spreading the joy! Do you mind sharing what happenened to me?"
+  
+  utter_happy_reply:
+  - text: "Really? I am so happy for you! This cat is also happy for you too!"
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/04/So_happy_smiling_cat.jpg"
+
+  utter_unhappy:
+  - text: "I'm sorry to hear that you're feeling sad. Is there anything I can do to help?"
+  - text: "I can hear the sadness in your voice. Do you want to talk about what's been bothering you?"
+  - text: "It's okay to feel sad sometimes. Would you like to share what's been on your mind?"
+  - text: "I'm here for you if you need someone to talk to. You don't have to go through this alone. Do you want to share it with me?"
+  - text: "It's tough when we're feeling down. Do you want to take a break and tell me about it? That might help you feel better."
+  
+  utter_unhappy_reply:
+  - text: "Everything will eventually get better, dont't worry! Try to take it easy! Here is a picture of a cute kitten to lighten your day!"
+    image: "https://wallpaper.dog/large/5569915.jpg"
+
+  utter_angry:
+  - text: "I can hear that you're feeling angry. Do you want to talk about what happened?"
+  - text: "It's understandable to feel angry sometimes. What's been bothering you? Do you want to share it with me?"
+  - text: "I'm sorry that you're feeling angry. Do you telling me whhy?"
+  - text: "Let's take a deep breath together. What's been frustrating you lately? Do you mind sharing?"
+
+  utter_angry_reply:
+  - text: "It is okay to feel anger at someone or something but dwelling on it for too much will be not good for your health! Here a picture of a cat-roll to cheer you up!:"
+    image: "https://static.india.com/wp-content/uploads/2015/11/089.jpg"
+
+  utter_surprised:
+  - text: "Wow, that's surprising! What happened? Will you share it with me?"
+  - text: "I can sense your surprise. Can you tell me more about what's going on?"
+  - text: "I wasn't expecting that. What's the story behind this surprise? Will you tell me?"
+  - text: "I'm glad you're surprised in a good way. What's making you feel that way? Will you share it with me?"
+  - text: "That's definitely unexpected. Will you share it to me?"
+
+  utter_surprise_reply:
+  - text: "Wow that really was surprising! Wanna see another surprise? Here is a picture of a a giga chad cat! Bet you didn't expect that!"
+    image: "https://cdn.pixilart.com/photos/large/88f82903d5a6fd2.jpg"
+
+  utter_fear:
+  - text: "I can hear that you're feeling afraid. What's been worrying you? Will you tell me about it?"
+  - text: "It's understandable to feel scared sometimes. What's been causing your fear? Will you share it to me about it?"
+  - text: "I'm here for you if you need someone to talk to. What's been making you feel afraid? Will you share it with me?"
+
+  utter_fear_reply:
+  - text: "Do not feel afraid anymore! This cat is here to save your day!"
+    image: "https://thumbs.dreamstime.com/b/cat-super-hero-wearing-red-cloak-mask-golden-locket-white-background-130699482.jpg"
+
+  utter_love:
+  - text: "I'm happy to hear that you're feeling love. Who or what is making you feel this way? Will you tell me about it?"
+  - text: "Love is a wonderful emotion. What's making your heart feel full? Will you share it with me?"
+  - text: "I can hear the love in your voice. It's a beautiful feeling, isn't it? Will you share about it with me?"
+
+  utter_love_reply:
+  - text: "That is really lovely! This cat wants your love too! (meow meow)"
+    image: "https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif"
+
+  utter_gratitude:
+  - text: "Anytime!"
+    image: "https://www.urbanpethospital.com/blog/image.axd?picture=/thumbs-up.jpg"
+
+  utter_affirm_response:
+  - text: "Tell me about it!"
+  - text: "I am all ears!"
+  - text: "I will hear it!"
+  - text: "I am listening!, do continue!"
+  - text: "Thanks you! I am listening!"
+
+  utter_deny_response:
+  - text: "okay"
+    image: "https://media.tenor.com/BP70qe8X0J8AAAAC/crycat-crying-cat.gif"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
